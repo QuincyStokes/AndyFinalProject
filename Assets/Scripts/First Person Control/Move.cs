@@ -18,7 +18,7 @@ public class Move : MonoBehaviour
 
     void Update()
     {
-        float speed = Input.GetKey(runKey) ? runSpeed : walkSpeed;
+        float speed = walkSpeed;
 
         float inputX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         float inputZ = Input.GetAxis("Vertical") * speed * Time.deltaTime;
